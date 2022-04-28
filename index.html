@@ -8,29 +8,45 @@
     <title>Good Trip</title>
     <link rel="shortcut icon" href="images/canguro1.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/style.css" />
 </head>
 
 <body>
-    <div class="grid-container">
-        <header class="header">
-            <div>
-                <h1>Good Trip</h1>
-                <img src="images/canguro1.png" alt="" class="animate__animated animate__rubberBand">
-            </div>
-            <nav>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-3 mb-2 bg-success text-white">
+            <div class="container-fluid">
                 <div>
-                    <ul>
-                        <li><a href="index.html" class="indice">Home</a></li>
-                        <li><a href="Pages/Destinos.html" class="indice">Destinos</a>
+                    <a class="navbar-brand" href="#">
+                        Good Trip
+                        <img src="Images/canguro1.png" alt="" width="30" height="24"
+                            class="d-inline-block align-text-top">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Pages/Destinos.html">Destinos</a>
                             <ul>
                                 <li><a href="Pages/Destinos.html #SD" class="indice subindice">Sydney</a></li>
                                 <li><a href="Pages/Destinos.html #MB" class="indice subindice">Melbroune</a></li>
                                 <li><a href="Pages/Destinos.html #BB" class="indice subindice">Brisbane</a></li>
                             </ul>
                         </li>
-                        <li><a href="Pages/Trabajos.html" class="indice">Trabajos</a></li>
-                        <li><a href="Pages/Visas.html" class="indice">Visas</a>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Pages/Trabajos.html">Trabajos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Pages/Visas.html">Visas</a>
                             <ul>
                                 <li><a href="Pages/Visas.html #WH" class="indice subindice">Working Holiday</a></li>
                                 <li><a href="Pages/Visas.html #WS" class="indice subindice">Work and Study</a></li>
@@ -39,197 +55,244 @@
                                 <li><a href="Pages/Visas.html #VTur" class="indice subindice">Visa de turista</a></li>
                             </ul>
                         </li>
-                        <li><a href="Pages/Comunidad.html" class="indice">Comunidad</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Pages/Comunidad.html">Comunidad</a>
+                        </li>
                     </ul>
                 </div>
-            </nav>
-        </header>
-        <main>
-            <section class="bienvenida">
-                <h2 class=" animate__animated animate__backInLeft">Bienvenido GoodTriper</h2>
-                <img src="Images/banderaAustralia.png" alt="Bandera Auatralia" class=" animate__animated animate__backInLeft">
-            </section>
-            <section class="introduccion">
-                <iframe src="https://www.youtube.com/embed/bQmzk05I3nw" title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <div>
-                    <h3>Hora de viajar!</h3>
-                    <p>Ya son más de 15 años ayudando a cumplir los sueños de mucha gente en Australia. Muchas personas
-                        han
-                        podido
-                        dar el salto y animarse a explorar el mundo y nosotros les hemos animado y ayudado a hacerlo. Ya
-                        hemos
-                        ayudado a más de 30.000 personas a cumplir sus metas en Australia. Go Study te ayuda
-                        gratuitamente
-                        desde
-                        sus
-                        oficinas en España y Australia con toda la experiencia y conocimiento del mundo. Nosotros
-                        trabajamos
-                        para
-                        que tú solo tengas que preocuparte de disfrutar tu aventura.Somos más de 70 personas en 12
-                        oficinas
-                        de
-                        todo
-                        el mundo dispuestos a ayudarte en cualquier parte de tu aventura hacia Australia. Estar en
-                        tantos
-                        sitios
-                        hace que seamos la agencia australiana de estudiantes internacionales más grande.</p>
-                </div>
-            </section>
-            <section class="razones">
-                <h2>6 razones para conocer Australia</h2>
-                <div>
-                    <div>
-                        <article>
-                            <h3>Los paisajes naturales</h3>
-                            <img src="images/Paisaje.jpg" alt="Paisajes">
-                            <p class="parrafo">Australia es propiedad de la Madre Naturaleza. Así. Sin más. Las
-                                condiciones
-                                climáticas y orográficas del
-                                país han hecho que el ser humano quedara confinado a vivir, principalmente, en áreas
-                                costeras.
-                                En
-                                estas
-                                zonas se concentran el mayor número de ciudades australianas, quedando un territorio
-                                vastísimo
-                                en
-                                manos
-                                de la naturaleza. Y ella se ha encargado de darle una forma bellísima a sus
-                                posesiones.En
-                                Australia
-                                encontrarás un sinfín de Parques Naturales formados por montañas, bosques, selvas,
-                                desiertos,
-                                ríos,
-                                lagos, islas.</p>
-                            <a href="#">Ver más</a>
-                        </article>
-                        <article>
-                            <h3>La fauna</h3>
-                            <img src="images/Fauna.jpg" alt="Fauna">
-                            <p class="parrafo">Con las principales poblaciones humanas confinadas a las costas,
-                                Australia
-                                sigue
-                                siendo territorio
-                                animal.Por sus tierras campan a sus anchas los saltarines canguros, los emus, los
-                                achuchables
-                                koalas, pero también los dingos, fieros cocodrilos, serpientes de todo tipo, arácnidos,
-                                wombats,
-                                monos y,
-                                cómo no, el famoso diablo de Tasmania.En sus aguas, los tiburones se adueñan de unos
-                                fondos
-                                marinos
-                                donde
-                                puedes encontrar prácticamente de todo. Bucear en la Gran Barrera de Coral es una
-                                experiencia
-                                que
-                                nunca olvidarás.</p>
-                            <a href="#">Ver más</a>
-                        </article>
-                        <article>
-                            <h3>Los mejores road trips del mundo</h3>
-                            <img src="images/roadTripes.jpg" alt="Road tripes">
-                            <p class="parrafo">En el caso de Australia, habrá lugares en los que no encuentres
-                                un pueblo o una pensión en 400 o 500 km a la redonda. Te recomendamos realizar un par de
-                                Road
-                                Tripes: Uno en el sureste
-                                del país - partiendo de Sídney, visitando las Blue Mountains, y recorriendo la Great
-                                Ocean
-                                Road
-                                antes de
-                                acabar el Melbourne - y otro en la deshabitada costa oeste, partiendo de Perth hacia el
-                                norte,
-                                hasta
-                                alcanzar Monkey Mia. Desvencijados carteles anuncian en la carretera que no encontrarás
-                                ninguna
-                                gasolinera en los próximos 400 km.</p>
-                            <a href="#">Ver más</a>
-                        </article>
-                        <article>
-                            <h3>La aventura</h3>
-                            <img src="images/aventura.jpg" alt="Aventura">
-                            <p class="parrafo">Leyendo los tres puntos anteriores, imagino que no te quedará la menor
-                                duda
-                                de
-                                que
-                                Australia es un lugar perfectamente abonado para la aventura. Animales salvajes;
-                                una naturaleza exuberante y diversa que te lleva a condiciones extremas; carreteras que
-                                se
-                                adentran
-                                en
-                                territorios perdidos de la mano de cualquier dios. El grado de aventura lo eliges tú.
-                                Sin
-                                embargo,
-                                debes tener cuidado: no estás en el campamento de verano de la sierra cercana a tu casa.
-                                Prudencia y
-                                a
-                                disfrutar de una aventura que será complicado vivir en otros lugares.</p>
-                            <a href="#">Ver más</a>
-                        </article>
-                        <article>
-                            <h3>Las ciudades</h3>
-                            <img src="images/ciudadAustraliana.jpg" alt="Ciudad">
-                            <p class="parrafo">Sí, en Australia también hay grandes ciudades. Todas ellas son muy
-                                cosmopolitas,
-                                gracias a que se han ido forjando como resultado de la inmigración.Quizá las más
-                                conocidas e
-                                importantes sean Sídney y
-                                Melbourne, en la costa este, y Perth, en la oeste.Tras visitar las tres, creo que me
-                                quedo
-                                con
-                                Sídney. El
-                                centro de la ciudad está ocupado por altos edificios de grandes empresas y la
-                                combinación de
-                                los
-                                mismos con los grandes parques, el jardín botánico, las playas y la famosa Bahía de
-                                Sídney
-                                crean
-                                una
-                                ciudad de corte agradable.</p>
-                            <a href="#">Ver más</a>
-                        </article>
-                        <article>
-                            <h3>Los australianos</h3>
-                            <img src="images/Australianos.jpeg" alt="Australianos">
-                            <p class="parrafo">El hecho de que Australia sea una nación relativamente nueva y que la
-                                gran
-                                mayoría de
-                                la población esté compuesta por descendientes de
-                                inmigrantes de las más diversas partes del mundo, ha forjado en el australiano un
-                                carácter
-                                abierto y
-                                amigable, ayudado, cómo no, por un buen clima.Además, son gente deportista y alegre, que
-                                gusta
-                                de la
-                                vida al aire libre. Casi todos practican el surf, buceo, running, ciclismo... O todos
-                                ellos
-                                a la
-                                vez. Si te juntas con australianos, nunca dirán que no a una buena barbacoa regada con
-                                una
-                                fuenta
-                                inacabable de cervezas. </p>
-                            <a href="#">Ver más</a>
-                        </article>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="bienvenida">
+            <h2 class=" animate__animated animate__backInLeft">Bienvenido GoodTriper</h2>
+            <img src="Images/banderaAustralia.png" alt="Bandera Auatralia"
+                class=" animate__animated animate__backInLeft">
+        </section>
+        <section>
+            <div class="conteiner-fluid">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-8 col-md-12 col-sm-12 ">
+                        <h3 class="text-center my-2">Hora de viajar!</h3>
+                        <p class="text-center ">Ya son más de 15 años ayudando a cumplir los sueños de mucha gente en
+                            Australia. Muchas personas
+                            han
+                            podido
+                            dar el salto y animarse a explorar el mundo y nosotros les hemos animado y ayudado a
+                            hacerlo. Ya
+                            hemos
+                            ayudado a más de 30.000 personas a cumplir sus metas en Australia. Go Study te ayuda
+                            gratuitamente
+                            desde
+                            sus
+                            oficinas en España y Australia con toda la experiencia y conocimiento del mundo. Nosotros
+                            trabajamos
+                            para
+                            que tú solo tengas que preocuparte de disfrutar tu aventura.Somos más de 70 personas en 12
+                            oficinas
+                            de
+                            todo
+                            el mundo dispuestos a ayudarte en cualquier parte de tu aventura hacia Australia. Estar en
+                            tantos
+                            sitios
+                            hace que seamos la agencia australiana de estudiantes internacionales más grande.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center my-3">
+                        <iframe src="https://www.youtube.com/embed/bQmzk05I3nw" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen height="220" width="400"></iframe>
                     </div>
                 </div>
-            </section>
-            <section class="logo">
-                <a href="#"><img src="images/logoWp.png" alt="Logo"></a>
-            </section>
-        </main>
+            </div>
+        </section>
+        <section class="razones">
+            <h2>6 razones para conocer Australia</h2>
+            <div class="conteiner-fluid">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center my-3">
+                        <div class="card text-center" style="width: 22rem;">
+                            <img src="images/Paisaje.jpg" class="card-img-top" alt="..." height="250" >
+                            <div class="card-body">
+                                <p class="card-text">Australia es propiedad de la Madre Naturaleza. Así. Sin más. Las
+                                    condiciones
+                                    climáticas y orográficas del
+                                    país han hecho que el ser humano quedara confinado a vivir, principalmente, en áreas
+                                    costeras.
+                                    En
+                                    estas
+                                    zonas se concentran el mayor número de ciudades australianas, quedando un territorio
+                                    vastísimo
+                                    en
+                                    manos
+                                    de la naturaleza. Y ella se ha encargado de darle una forma bellísima a sus
+                                    posesiones.En
+                                    Australia
+                                    encontrarás un sinfín de Parques Naturales formados por montañas, bosques, selvas,
+                                    desiertos,
+                                    ríos,
+                                    lagos, islas.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center my-3">
+                        <div class="card text-center" style="width: 22rem;">
+                            <img src="images/Fauna.jpg" class="card-img-top" alt="..." height="250">
+                            <div class="card-body">
+                                <p class="card-text">Con las principales poblaciones humanas confinadas a las costas,
+                                    Australia
+                                    sigue
+                                    siendo territorio
+                                    animal.Por sus tierras campan a sus anchas los saltarines canguros, los emus, los
+                                    achuchables
+                                    koalas, pero también los dingos, fieros cocodrilos, serpientes de todo tipo,
+                                    arácnidos,
+                                    wombats,
+                                    monos y,
+                                    cómo no, el famoso diablo de Tasmania.En sus aguas, los tiburones se adueñan de unos
+                                    fondos
+                                    marinos
+                                    donde
+                                    puedes encontrar prácticamente de todo. Bucear en la Gran Barrera de Coral es una
+                                    experiencia
+                                    que
+                                    nunca olvidarás.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center my-3">
+                        <div class="card text-center" style="width: 22rem;">
+                            <img src="images/roadTripes.jpg" class="card-img-top" alt="..." height="250">
+                            <div class="card-body">
+                                <p class="card-text">En el caso de Australia, habrá lugares en los que no encuentres
+                                    un pueblo o una pensión en 400 o 500 km a la redonda. Te recomendamos realizar un
+                                    par de
+                                    Road
+                                    Tripes: Uno en el sureste
+                                    del país - partiendo de Sídney, visitando las Blue Mountains, y recorriendo la Great
+                                    Ocean
+                                    Road
+                                    antes de
+                                    acabar el Melbourne - y otro en la deshabitada costa oeste, partiendo de Perth hacia
+                                    el
+                                    norte,
+                                    hasta
+                                    alcanzar Monkey Mia. Desvencijados carteles anuncian en la carretera que no
+                                    encontrarás
+                                    ninguna
+                                    gasolinera en los próximos 400 km.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center my-3">
+                        <div class="card text-center" style="width: 22rem;">
+                            <img src="images/aventura.jpg" class="card-img-top" alt="..." height="250">
+                            <div class="card-body">
+                                <p class="card-text">Leyendo los tres puntos anteriores, imagino que no te quedará la
+                                    menor
+                                    duda
+                                    de
+                                    que
+                                    Australia es un lugar perfectamente abonado para la aventura. Animales salvajes;
+                                    una naturaleza exuberante y diversa que te lleva a condiciones extremas; carreteras
+                                    que
+                                    se
+                                    adentran
+                                    en
+                                    territorios perdidos de la mano de cualquier dios. El grado de aventura lo eliges
+                                    tú.
+                                    Sin
+                                    embargo,
+                                    debes tener cuidado: no estás en el campamento de verano de la sierra cercana a tu
+                                    casa.
+                                    Prudencia y
+                                    a
+                                    disfrutar de una aventura que será complicado vivir en otros lugares.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center my-3">
+                        <div class="card text-center" style="width: 22rem;">
+                            <img src="images/ciudadAustraliana.jpg" class="card-img-top" alt="..." height="250">
+                            <div class="card-body">
+                                <p class="card-text">Sí, en Australia también hay grandes ciudades. Todas ellas son muy
+                                    cosmopolitas,
+                                    gracias a que se han ido forjando como resultado de la inmigración.Quizá las más
+                                    conocidas e
+                                    importantes sean Sídney y
+                                    Melbourne, en la costa este, y Perth, en la oeste.Tras visitar las tres, creo que me
+                                    quedo
+                                    con
+                                    Sídney. El
+                                    centro de la ciudad está ocupado por altos edificios de grandes empresas y la
+                                    combinación de
+                                    los
+                                    mismos con los grandes parques, el jardín botánico, las playas y la famosa Bahía de
+                                    Sídney
+                                    crean
+                                    una
+                                    ciudad de corte agradable.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center my-3">
+                        <div class="card text-center" style="width: 22rem;">
+                            <img src="images/australianos.jpeg" class="card-img-top" alt="..."height="250">
+                            <div class="card-body">
+                                <p class="card-text">El hecho de que Australia sea una nación relativamente nueva y que
+                                    la
+                                    gran
+                                    mayoría de
+                                    la población esté compuesta por descendientes de
+                                    inmigrantes de las más diversas partes del mundo, ha forjado en el australiano un
+                                    carácter
+                                    abierto y
+                                    amigable, ayudado, cómo no, por un buen clima.Además, son gente deportista y alegre,
+                                    que
+                                    gusta
+                                    de la
+                                    vida al aire libre. Casi todos practican el surf, buceo, running, ciclismo... O
+                                    todos
+                                    ellos
+                                    a la
+                                    vez. Si te juntas con australianos, nunca dirán que no a una buena barbacoa regada
+                                    con
+                                    una
+                                    fuenta
+                                    inacabable de cervezas.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
 
-        <footer class="footer">
-            <img src="images/canguro1.png" alt="">
-            <div>
-                <p>Contáctanos</p>
+                </div>
             </div>
-            <div>
-                <a href=""><img src="images/logoIg.png" alt=""></a>
-                <a href=""><img src="images/logoFb.png" alt=""></a>
-                <a href=""><img src="images/logoMail.png" alt=""></a>
-            </div>
-        </footer>
+        </section>
+        <section class="logo">
+            <a href="#"><img src="images/logoWp.png" alt="Logo"></a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <img src="images/canguro1.png" alt="">
+        <div>
+            <p>Contáctanos</p>
+        </div>
+        <div>
+            <a href=""><img src="images/logoIg.png" alt=""></a>
+            <a href=""><img src="images/logoFb.png" alt=""></a>
+            <a href=""><img src="images/logoMail.png" alt=""></a>
+        </div>
+    </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
