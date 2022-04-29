@@ -8,107 +8,171 @@
     <title>Good Trip</title>
     <link rel="shortcut icon" href="../images/canguro1.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/style.css" />
 </head>
 
 <body>
-    <div class="grid-container">
-        <header class="header">
-            <div>
-                <h1>Good Trip</h1>
-                <img src="../images/canguro1.png" alt="" class="animate__animated animate__rubberBand">
-            </div>
-            <nav>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-3 mb-2 bg-success text-white">
+            <div class="container-fluid">
                 <div>
-                    <ul>
-                        <li><a href="../index.html" class="indice">Home</a></li>
-                        <li><a href="Destinos.html" class="indice">Destinos</a>
+                    <a class="navbar-brand" href="#">
+                        Good Trip
+                        <img src="../Images/canguro1.png" alt="" width="30" height="24"
+                            class="d-inline-block align-text-top">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Destinos.html">Destinos</a>
                             <ul>
-                                <li><a href="Destinos.html #SD" class="indice subindice">Sydney</a></li>
-                                <li><a href="Destinos.html #MB" class="indice subindice">Melbroune</a></li>
-                                <li><a href="Destinos.html #BB" class="indice subindice">Brisbane</a></li>
+                                <li><a href="Pages/Destinos.html #SD" class="indice subindice">Sydney</a></li>
+                                <li><a href="Pages/Destinos.html #MB" class="indice subindice">Melbroune</a></li>
+                                <li><a href="Pages/Destinos.html #BB" class="indice subindice">Brisbane</a></li>
                             </ul>
                         </li>
-                        <li><a href="Trabajos.html" class="indice">Trabajos</a></li>
-                        <li><a href="Visas.html" class="indice">Visas</a>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Trabajos.html">Trabajos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Visas.html">Visas</a>
                             <ul>
-                                <li><a href="Visas.html #WH" class="indice subindice">Working Holiday</a></li>
-                                <li><a href="Visas.html #WS" class="indice subindice">Work and Study</a></li>
-                                <li><a href="Visas.html #VTrab" class="indice subindice">Visas de trabajo</a></li>
-                                <li><a href="Visas.html #VTran" class="indice subindice">Visa de tránsito</a></li>
-                                <li><a href="Visas.html #VTur" class="indice subindice">Visa de turista</a></li>
+                                <li><a href="Pages/Visas.html #WH" class="indice subindice">Working Holiday</a></li>
+                                <li><a href="Pages/Visas.html #WS" class="indice subindice">Work and Study</a></li>
+                                <li><a href="Pages/Visas.html #VTrab" class="indice subindice">Visas de trabajo</a>
+                                </li>
+                                <li><a href="Pages/Visas.html #VTran" class="indice subindice">Visa de tránsito</a>
+                                </li>
+                                <li><a href="Pages/Visas.html #VTur" class="indice subindice">Visa de turista</a>
+                                </li>
                             </ul>
                         </li>
-                        <li><a href="Comunidad.html" class="indice">Comunidad</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Comunidad.html">Comunidad</a>
+                        </li>
                     </ul>
                 </div>
-            </nav>
-        </header>
-        <main>
-            <section class="bienvenida">
-                <h2 class=" animate__animated animate__backInLeft">Bienvenido GoodTriper</h2>
-                <img src="../Images/banderaAustralia.png" alt="Bandera Auatralia" class=" animate__animated animate__backInLeft">
-            </section>
-            <div class="tituloComunidad">
-                <h1>Conviértete en un GoodTriper!</h1>
             </div>
-            <section class="comunidad">
-                <div class="formulario">
-                    <h2>Sumate a nuestra comunidad</h2>
-                    <form action="">
-                        <label for="nombre">Nombre y Apellido</label><br>
-                        <input type="text" name="nombre" id="nombre"><br>
-                        <label for="edad">Edad</label><br>
-                        <input type="email" name="email" id="email"><br>
-                        <label for="email">Email</label><br>
-                        <input type="number" name="edad" id="edad"><br>
-                        <label for="lugar">¿Donde querés viajar?</label><br>
-                        <select name="lugar" id="lugar">
-                            <option value="Sydney">Sydney</option>
-                            <option value="Melbroune">Melbroune</option>
-                            <option value="Brisbane">Brisbane</option>
-                        </select><br>
-                        <label for="lugar">¿Con qué tipo de visa te gustaría viajar?</label><br>
-                        <div><input type="radio" name="visa" value="Working Holiday">Working Holiday</div>
-                        <div><input type="radio" name="visa" value="Working Study">Working Study</div>
-                        <div><input type="radio" name="visa" value="Visa de transito">Visa de transito</div>
-                        <div><input type="radio" name="visa" value="Visa de trabajo">Visa de trabajo</div>
-                        <div><input type="radio" name="visa" value="Visa turista">Visa turista</div>
-
-                        <label for="detalle">Para que podamos darte más info nos gustaría saber un poco más de vos y
-                            tu
-                            viaje</label><br>
-                        <textarea name="detalle" id="detalle" cols="30"
-                            rows="10">Contanos más sobre tu viaje</textarea><br>
-                        <div><input type="checkbox" name="acepta" value="1"> Acepto términos y condiciones</div>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Borrar">
-                        <input type="button" value="Salir">
+        </nav>
+    </header>
+    <main>
+        <section class="bienvenida">
+            <h2 class=" animate__animated animate__backInLeft">Bienvenido GoodTriper</h2>
+            <img src="../Images/banderaAustralia.png" alt="Bandera Auatralia"
+                class=" animate__animated animate__backInLeft">
+        </section>
+        <div class="tituloComunidad">
+            <h1>Conviértete en un GoodTriper!</h1>
+        </div>
+        <div class="conteiner">
+            <div class="row">
+                <div class="col-lg-5">
+                    <form class="m-3">
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Nombre y Apellido</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Edad</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div>
+                            <label for="exampleInputPassword1" class="form-label">¿Donde querés viajar?</label>
+                        </div>
+                        <select class="form-select mb-4" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">Sydney</option>
+                            <option value="2">Melbourne</option>
+                            <option value="3">Brisbane</option>
+                        </select>
+                        <div>
+                            <label for="exampleInputPassword1" class="form-label">¿Con qué tipo de visa te gustaría
+                                viajar?</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Working Holiday
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Working Study
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Visa de transito
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Visa de trabajo
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Visa turista
+                            </label>
+                        </div>
+                        <div class="mb-3 my-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Contanos más sobre tu
+                                viaje</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Acepto términos y condiciones </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <button type="submit" class="btn btn-primary">Borrar</button>
+                        <button type="submit" class="btn btn-primary">Salir</button>
                     </form>
                 </div>
-                <div class="experiencias">
-                    <div>
-                        <h2>Más sobre la comunidad Good Triper</h2>
+                <div class="col-lg-7">
+                    <div class="experiencias">
                         <div>
+                            <h2>Más sobre la comunidad Good Triper</h2>
                             <div>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est corrupti repudiandae,
-                                    autem, tempora natus praesentium quibusdam nobis neque quo tenetur aliquid enim
-                                    velit
-                                    sed tempore, ipsa repellendus. Facere, id velit!
-                                    Eius culpa repellendus temporibus cupiditate ipsam at odio tempora molestias, quidem
-                                    nulla provident ad facilis cum, dolore ut quasi laudantium optio iure illum nobis
-                                    enim
-                                    reprehenderit! Quas asperiores modi impedit.</p>
+                                <div>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est corrupti repudiandae,
+                                        autem, tempora natus praesentium quibusdam nobis neque quo tenetur aliquid enim
+                                        velit
+                                        sed tempore, ipsa repellendus. Facere, id velit!
+                                        Eius culpa repellendus temporibus cupiditate ipsam at odio tempora molestias, quidem
+                                        nulla provident ad facilis cum, dolore ut quasi laudantium optio iure illum nobis
+                                        enim
+                                        reprehenderit! Quas asperiores modi impedit.</p>
+                                </div>
+                                <iframe src="https://www.youtube.com/embed/bQmzk05I3nw" title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
                             </div>
-                            <iframe src="https://www.youtube.com/embed/bQmzk05I3nw" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
                         </div>
-                    </div>
-                    <div class="grid-comunidad">
-                        <h2> Experiencias de GoodTripers</h2>
-                        <!-- <div> -->
+                        <div class="grid-comunidad">
+                            <h2> Experiencias de GoodTripers</h2>
                             <div>
                                 <img src="../Images/brisbane.jpg" alt="">
                             </div>
@@ -127,27 +191,107 @@
                             <div>
                                 <img src="../Images/gastronomia.jpg" alt="">
                             </div>
-                        <!-- </div> -->
+                        </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+        <!-- <section class="comunidad">
+            <div class="formulario">
+                <h2>Sumate a nuestra comunidad</h2>
+                <form action="">
+                    <label for="nombre">Nombre y Apellido</label><br>
+                    <input type="text" name="nombre" id="nombre"><br>
+                    <label for="edad">Edad</label><br>
+                    <input type="email" name="email" id="email"><br>
+                    <label for="email">Email</label><br>
+                    <input type="number" name="edad" id="edad"><br>
+                    <label for="lugar">¿Donde querés viajar?</label><br>
+                    <select name="lugar" id="lugar">
+                        <option value="Sydney">Sydney</option>
+                        <option value="Melbroune">Melbroune</option>
+                        <option value="Brisbane">Brisbane</option>
+                    </select><br>
+                    <label for="lugar">¿Con qué tipo de visa te gustaría viajar?</label><br>
+                    <div><input type="radio" name="visa" value="Working Holiday">Working Holiday</div>
+                    <div><input type="radio" name="visa" value="Working Study">Working Study</div>
+                    <div><input type="radio" name="visa" value="Visa de transito">Visa de transito</div>
+                    <div><input type="radio" name="visa" value="Visa de trabajo">Visa de trabajo</div>
+                    <div><input type="radio" name="visa" value="Visa turista">Visa turista</div>
 
-            <section class="logo">
-                <a href="#"><img src="../images/logoWp.png" alt="Logo"></a>
-            </section>
-        </main>
-        <footer class="footer">
-            <img src="../images/canguro1.png" alt="">
-            <div>
-                <p>Contáctanos</p>
+                    <label for="detalle">Para que podamos darte más info nos gustaría saber un poco más de vos y
+                        tu
+                        viaje</label><br>
+                    <textarea name="detalle" id="detalle" cols="30" rows="10">Contanos más sobre tu viaje</textarea><br>
+                    <div><input type="checkbox" name="acepta" value="1"> Acepto términos y condiciones</div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                    <input type="button" value="Salir">
+                </form>
             </div>
-            <div>
-                <a href=""><img src="../images/logoIg.png" alt=""></a>
-                <a href=""><img src="../images/logoFb.png" alt=""></a>
-                <a href=""><img src="../images/logoMail.png" alt=""></a>
+            <div class="experiencias">
+                <div>
+                    <h2>Más sobre la comunidad Good Triper</h2>
+                    <div>
+                        <div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est corrupti repudiandae,
+                                autem, tempora natus praesentium quibusdam nobis neque quo tenetur aliquid enim
+                                velit
+                                sed tempore, ipsa repellendus. Facere, id velit!
+                                Eius culpa repellendus temporibus cupiditate ipsam at odio tempora molestias, quidem
+                                nulla provident ad facilis cum, dolore ut quasi laudantium optio iure illum nobis
+                                enim
+                                reprehenderit! Quas asperiores modi impedit.</p>
+                        </div>
+                        <iframe src="https://www.youtube.com/embed/bQmzk05I3nw" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="grid-comunidad">
+                    <h2> Experiencias de GoodTripers</h2>
+                    <div>
+                        <img src="../Images/brisbane.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="../Images/ciudadAustraliana.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="../Images/melbroune.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="../Images/sydney.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="../Images/paisaje.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="../Images/gastronomia.jpg" alt="">
+                    </div>
+                </div>
             </div>
-        </footer>
+        </section> -->
+
+        <section class="logo">
+            <a href="#"><img src="../images/logoWp.png" alt="Logo"></a>
+        </section>
+    </main>
+    <footer class="footer">
+        <img src="../images/canguro1.png" alt="">
+        <div>
+            <p>Contáctanos</p>
+        </div>
+        <div>
+            <a href=""><img src="../images/logoIg.png" alt=""></a>
+            <a href=""><img src="../images/logoFb.png" alt=""></a>
+            <a href=""><img src="../images/logoMail.png" alt=""></a>
+        </div>
+    </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
