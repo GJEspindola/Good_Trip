@@ -1,0 +1,22 @@
+.sitios {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div a {
+        display: block;
+        background-color: rgb(48, 118, 114);
+        color: white;
+        text-decoration: none;
+        margin: 20px 0px 30px 40px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+.sitiosTitulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    background-color: rgb(48, 118, 114);
+}

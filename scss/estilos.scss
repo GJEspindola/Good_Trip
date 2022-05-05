@@ -1,0 +1,19 @@
+@import "PagesEstilos/gridContenedor";
+@import "PagesEstilos/header";
+@import "PagesEstilos/bienvenida";
+@import "PagesEstilos/trabajos";
+@import "PagesEstilos/sitios";
+@import "PagesEstilos/footer";
+@import "variables";
+
+.imagenesTrabajos {
+    border-radius: 10%;
+    width: 200px;
+    height: 150px;
+    margin: 20px 10px 20px 10px;
+}
+
+.sitiosTitulo {
+    background-color: $colorPrimario;
+}
+
