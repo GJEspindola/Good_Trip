@@ -135,6 +135,18 @@
   height: 150px;
   margin: 20px 10px 20px 10px; }
 
+.trabajo-gastronomia {
+  background-color: #448683; }
+
+.trabajo-hosteleria {
+  background-color: #979e97; }
+
+.trabajo-trabajorural {
+  background-color: #448683; }
+
+.trabajo-sistemas {
+  background-color: #979e97; }
+
 .sitios {
   display: flex;
   justify-content: space-between;
@@ -157,3 +169,29 @@
 
 .sitiosTitulo {
   background-color: #144d53; }
+
+.trabajo-gastronomia {
+  background-color: #67a5a1; }
+
+.trabajo-hosteleria {
+  background-color: #bec9be; }
+
+.trabajo-trabajorural {
+  background-color: #bec9be; }
+
+.trabajo-sistemas {
+  background-color: #67a5a1; }
+
+.introduccionTrabajos {
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  text-align: center; }
+
+.introduccionDestinos, .ciudadesParaConocer {
+  font-size: 25px;
+  font-weight: bold;
+  color: #144d53; }
+
+.ciudadesParaConocer {
+  color: white; }

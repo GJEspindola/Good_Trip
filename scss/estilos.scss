@@ -11,3 +11,42 @@
     background-color: $colorPrimario;
 }
 
+// MAP
+$tiposdetrabajo: (
+    gastronomia:rgb(103, 165, 161),
+    hosteleria: rgb(190, 201, 190),
+    trabajorural:rgb(190, 201, 190),
+    sistemas:rgb(103, 165, 161));
+
+@each $trabajo, $color in $tiposdetrabajo {
+    .trabajo-#{$trabajo} {
+        background-color: $color;
+    }
+};
+
+// MAP-GET
+$estilos: (
+    fondo: black,
+    letra: white,
+    tamañoletra: 30px,
+    centro: center,
+);
+
+.introduccionTrabajos {
+    background-color: map-get($estilos, fondo);
+    color: map-get($estilos, letra);
+    font-size: map-get($estilos, tamañoletra);
+    text-align: map-get($estilos, centro);
+};
+
+// EXTEND
+.introduccionDestinos{
+font-size: 25px;
+font-weight: bold;
+color: $colorPrimario;
+}
+
+.ciudadesParaConocer{
+@extend .introduccionDestinos;
+color:white;
+}
