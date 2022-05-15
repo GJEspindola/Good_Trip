@@ -40,15 +40,3 @@
     height: 150px;
     margin: 20px 10px 20px 10px;
 }
-
-$tiposdetrabajo: (
-    gastronomia:rgb(68, 134, 131),
-    hosteleria: rgb(151, 158, 151),
-    trabajorural:rgb(68, 134, 131),
-    sistemas:rgb(151, 158, 151));
-
-@each $trabajo, $color in $tiposdetrabajo {
-    .trabajo-#{$trabajo} {
-        background-color: $color;
-    }
-}

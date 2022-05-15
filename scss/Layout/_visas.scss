@@ -1,0 +1,63 @@
+.visas>div {
+    h2 {
+        font-size: 24px;
+        text-align: center;
+        margin: 10px 0px 10px 0px;
+        color: rgb(26, 60, 64);
+    }
+
+    p {
+        text-align: justify;
+        margin: 0px 20px 30px 10px;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        margin-bottom: 30px;
+        margin-top: 10px;
+
+        li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgb(20, 77, 83);
+            padding: 5px;
+
+            &:hover a {
+                color: black;
+                transition: 0.5;
+            }
+        }
+    }
+
+    article {
+        div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row-reverse;
+            margin: 0px 30px 20px 30px;
+
+            p {
+                margin-top: 20px;
+            }
+
+            img {
+                border-radius: 10%;
+                width: 400px;
+                height: 220px;
+            }
+        }
+
+        h3 {
+            display: block;
+            text-align: center;
+            background-color: rgb(48, 118, 114);
+            color: white;
+        }
+    }
+}
