@@ -12,6 +12,10 @@
     align-items: center;
 }
 
+.form{
+    width: 40%;
+    padding: 10px;
+}
 .formulario {
     background-color: rgb(213, 218, 208);
     border: solid 2px black;
@@ -34,6 +38,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    width: 60%;
 
     div {
         h2 {

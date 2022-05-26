@@ -1,26 +1,6 @@
 
-.introduccion {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row-reverse;
-    margin-bottom: 20px;
-    iframe {
-        border-radius: 20%;
-        width: 500px;
-        height: 250px;
-    }
-    div {
-        width: 50%;
-        text-align: justify;
-        h3 {
-            text-align: center;
-            font-weight: bold;
-            font-size: 25px;
-            margin-bottom: 10px;
-            color: rgb(26, 60, 64);
-        }
-    }
+.introduccion{
+    padding: 10px;
 }
 
 .razones {

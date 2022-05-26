@@ -209,24 +209,7 @@
   height: 220px; }
 
 .introduccion {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: row-reverse;
-  margin-bottom: 20px; }
-  .introduccion iframe {
-    border-radius: 20%;
-    width: 500px;
-    height: 250px; }
-  .introduccion div {
-    width: 50%;
-    text-align: justify; }
-    .introduccion div h3 {
-      text-align: center;
-      font-weight: bold;
-      font-size: 25px;
-      margin-bottom: 10px;
-      color: #1a3c40; }
+  padding: 10px; }
 
 .razones h3 {
   text-align: center;
@@ -329,6 +312,10 @@
   justify-content: space-between;
   align-items: center; }
 
+.form {
+  width: 40%;
+  padding: 10px; }
+
 .formulario {
   background-color: #d5dad0;
   border: solid 2px black;
@@ -347,7 +334,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  width: 60%; }
   .experiencias div h2 {
     background-color: #144d53;
     color: white;
@@ -376,6 +364,160 @@
     width: 200px;
     height: 150px;
     margin: 10px; }
+
+/* -----MEDIA QUERY INDEX----- */
+@media screen and (max-width: 1280px) {
+  .introduccion {
+    flex-direction: column-reverse; }
+  .razones div div {
+    text-align: center; } }
+
+@media screen and (max-width: 852px) {
+  .header {
+    flex-direction: column; }
+  .introduccion iframe {
+    width: 400px;
+    height: 200px; } }
+
+@media screen and (max-width: 680px) {
+  .introduccion iframe {
+    width: 300px;
+    height: 180px; } }
+
+@media screen and (max-width: 480px) {
+  .introduccion iframe {
+    width: 250px;
+    height: 150px; } }
+
+@media screen and (max-width: 425px) {
+  .grid-container {
+    width: 100%; }
+  .introduccion iframe {
+    width: 200px;
+    height: 130px; }
+  .razones div div article {
+    height: 450px;
+    width: 290px; }
+  .razones div div article img {
+    height: 40%; } }
+
+@media screen and (max-width: 405px) {
+  .header nav ul li {
+    margin: 5px; }
+  .razones h2 {
+    font-size: 20px; } }
+
+/* -----MEDIA QUERY DESTINOS----- */
+@media screen and (max-width: 980px) {
+  .articulosDestinos {
+    flex-direction: column; }
+  .articulosDestinos div {
+    width: 100%; }
+  .articulosDestinos--modificador {
+    flex-direction: column;
+    margin: 10px; }
+  .articulosDestinos--modificador div {
+    margin-left: 0px; } }
+
+@media screen and (max-width: 410px) {
+  .imagenesDestinos {
+    width: 300px;
+    height: 180px; } }
+
+/* -----MEDIA QUERY TRABAJOS----- */
+@media screen and (max-width: 1280px) {
+  .tiposDeTrabajos {
+    flex-direction: column; }
+  .sitios {
+    flex-direction: column; }
+  .sitiosEnlaces {
+    display: inline-block; }
+  .imagenesTrabajos {
+    width: 400px;
+    height: 300px; } }
+
+@media screen and (max-width: 480px) {
+  .grid-trabajos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "div" "div" "div" "div"; }
+  .sitiosTitulo {
+    font-size: 20px; }
+  .sitiosEnlaces {
+    margin: 20px 0px 30px 10px; }
+  .grafico {
+    width: 300px;
+    height: 200px; }
+  .imagenesTrabajos {
+    width: 300px;
+    height: 250px; } }
+
+@media screen and (max-width: 360px) {
+  .sitiosEnlaces {
+    margin: 20px 0px 30px 4px;
+    font-size: 16px; } }
+
+/* -----MEDIA QUERY VISAS----- */
+@media screen and (max-width: 900px) {
+  .visas div article div {
+    flex-direction: column; } }
+
+@media screen and (max-width: 650px) {
+  .grid-container {
+    grid-template-rows: 0.01fr 2fr 0.01fr; }
+  .visas > div ul li a {
+    font-size: 14px; } }
+
+@media screen and (max-width: 500px) {
+  .visas > div ul {
+    flex-direction: column; }
+  .visas > div ul li {
+    margin: 10px; }
+  .visas > div ul li a {
+    font-size: 18px; }
+  .visas div article div img {
+    border-radius: 10%;
+    width: 300px;
+    height: 180px; } }
+
+/* -----MEDIA QUERY COMUNIDAD----- */
+@media screen and (max-width: 1150px) {
+  .comunidad {
+    flex-direction: column-reverse; }
+  .experiencias {
+    width: 100%; }
+  .form {
+    width: 60%; }
+  .formulario {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: solid 2px black;
+    width: 100%; }
+  .grid-comunidad div {
+    justify-self: center; } }
+
+@media screen and (max-width: 660px) {
+  .experiencias div div {
+    flex-direction: column; }
+  .grid-comunidad {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr;
+    grid-template-areas: "titulo titulo" "div div" "div div" "div div"; } }
+
+@media screen and (max-width: 440px) {
+  .grid-comunidad div img {
+    width: 150px;
+    height: 120px;
+    margin: 5px; } }
+
+@media screen and (max-width: 360px) {
+  .experiencias div h2 {
+    font-size: 16px; }
+  .experiencias div div iframe {
+    width: 250px;
+    height: 150px; } }
 
 .sitiosTitulo {
   background-color: #144d53; }
